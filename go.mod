@@ -1,3 +1,3 @@
-module github.com/sagarrajak/packer
+module sagarrajak/packer
 
 go 1.21.3
