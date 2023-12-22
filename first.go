@@ -2,8 +2,6 @@ package main
 
 import (
 	"fmt"
-	"sagarrajak/packer/maptut"
-	"sagarrajak/packer/slice"
 	"sagarrajak/packer/structbasic"
 	"strconv"
 	"time"
@@ -168,10 +166,24 @@ func main() {
 	// slice.TwoDSlices()
 	// slice.RangeConstruct()
 	// slice.ReSlicing()
-	slice.CopyInGO()
-	maptut.MapBasic()
+	// slice.CopyInGO()
+	// maptut.MapBasic()
 
-	node := structbasic.NewNode(65, nil, nil)
-	node.left = &structbasic.NewNode(12, nil, nil)
-	node.right = &structbasic.NewNode(14, nil, nil)
+	// // node.right = &structbasic.NewNode(14, nil, nil)
+	// node := structbasic.NewNode(65, nil, nil)
+	// node.Left = structbasic.NewNode(12, nil, nil)
+	// node.Right = structbasic.NewNode(12, nil, nil)
+	// fmt.Printf("module data node %f\n", node.Data)
+	// fmt.Printf("module data node %f\n", node.Left.Data)
+	// fmt.Printf("module data node %f\n", node.Right.Data)
+
+	// structbasic.HelperOuterInner()
+	// twoPoint := &structbasic.TwoInts{A: 12, B: 12}
+	// fmt.Printf("Sum of two ponter %d\n", twoPoint.Sum())
+	// fmt.Printf("Mul of two pointer %d\n", twoPoint.Mul())
+	// structbasic.TestMethodAsPointer()
+	structbasic.MainCaller()
+	person := new(structbasic.Person)
+	person.SetFirstName("sagar")
+	fmt.Println(person.FirstName())
 }

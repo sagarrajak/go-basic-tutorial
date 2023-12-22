@@ -1,11 +1,11 @@
 package structbasic
 
 type Node struct {
-	data  float64
-	left  *Node
-	right *Node
+	Data  float64
+	Left  *Node
+	Right *Node
 }
 
-func NewNode(value float64, left *Node, right *Node) Node {
-	return Node{value, left, right}
+func NewNode(value float64, left *Node, right *Node) *Node {
+	return &Node{value, left, right}
 }
